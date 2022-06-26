@@ -1,5 +1,12 @@
 # ここはどこ？ => config/routes.rb
 Rails.application.routes.draw do
+  get 'users/show'
+  get 'users/edit'
+  get 'books/new'
+  get 'books/create'
+  get 'books/index'
+  get 'books/show'
+  get 'books/destroy'
   ## root to: => サイトのルートページ(/)にアクセスしたときに使用するコントローラを決めます
   root to: "homes#top"
 
