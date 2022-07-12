@@ -13,6 +13,9 @@
 
   <body>
     <header> <!--どのページからも表示される、動的なヘッダーを作成します。-->
+      <%= link_to "Bookers", '/' %><!--Bookersのtopページへのリンク-->
+      <%= link_to "Home", '/' %><!--Homeへのリンク-->
+      <%= link_to "About", '/home/about' %><!--Bookersのtopページへのリンク-->
       <% if user_signed_in? %> <!--deviseが用意してくれている、ログイン状態を判断するメソッドを使います。-->
         <%= link_to "Log out", destroy_user_session_path, method: :delete %>
       <% else %>

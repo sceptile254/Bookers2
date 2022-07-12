@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   get 'books/index'
   get 'books/show'
   get 'books/destroy'
+
+  get 'home/about' => "homes#about"
+
+  resources :users
   ## root to: => サイトのルートページ(/)にアクセスしたときに使用するコントローラを決めます
   root to: "homes#top"
 
